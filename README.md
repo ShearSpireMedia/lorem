@@ -1,7 +1,7 @@
 # Lorem Generator
 > A handy program to generate nonsense greeking to use in your layouts.
 
-> See the program running on my [MakePages.com site](https://makepages.com/lorem "lorem generator") 
+> See the program running on my <a href="https://makepages.com/lorem/" target="_blank" title="lorem generator">MakePages.com site</a>.
 
 ## Documentation
 
