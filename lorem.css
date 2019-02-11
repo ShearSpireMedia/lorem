@@ -1,0 +1,75 @@
+@charset "UTF-8";
+*, *:before, *:after {box-sizing: border-box;}
+html {font-size:16px;}
+.wrapper {
+  display:grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  max-width:1200px;
+  width:100%;
+  margin:0 auto 10px auto;
+  border:1px solid #FDD835;
+  border-radius:0px 0px 24px 24px;
+  border-top:0 none;
+}
+.header, .footer {grid-column: 1 / -1;text-align:center;}
+#navdiv {
+  text-align:center;
+  max-width:100%;
+  border:0 none;
+  border-bottom:2px solid #FDD835;
+  padding-bottom:8px;
+  margin-bottom:8px;
+}
+@media screen and (min-width: 768px) {
+  html {font-size:18px;}
+	.wrapper {grid-template-columns: 2fr 10fr;}
+  .header {text-align:left;}
+  #navdiv {border:0 none;border-right:2px solid #FDD835;padding-right:8px;padding-left:8px;margin-bottom:1px;}
+}
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+	.wrapper {grid-template-columns: 1fr;}
+}
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+	.wrapper {grid-template-columns: 1fr;}
+}
+
+
+/*Just Cosmetics*/
+html {font-family:Arial,sans-serif;}
+body {background:#1E88E5;padding:0 0 10px 0;margin:0;}
+
+.wrapper {background:#fff;}
+
+.navbutton {
+  -webkit-appearance:none;
+  font-size:1rem;
+  border:2px solid #1E88E5;
+  background:#1E88E5;
+  text-align:center;
+  margin:2px;
+  padding:6px;
+  color:#fff;
+  cursor:pointer;
+  white-space:nowrap;
+  min-width:8em;
+  border-radius:8px;
+}
+.navbutton:hover {color:#000;background:#FDD835;}
+
+.header {border-bottom:2px solid #FDD835;margin-bottom:10px;padding:10px;}
+.content {padding:0 10px;max-width:96%;}
+h1 {margin:0 0 10px 0;padding:0;color:#1E88E5;}
+.footer {text-align:center;border-top:2px solid #FDD835;margin:10px 0 0 0;padding:10px 0 10px 0;color:#000;background:#FDD835;border:1px solid #FDD835;border-radius:0px 0px 24px 24px;}
+.header:first-line {font-size:2rem;color:#1E88E5;}
+#blurb:first-letter {
+  color:#F44336;
+  float:left;
+  font-family:Georgia,serif;
+  font-size:3.8rem;
+  line-height:3rem;
+  padding:1px 6px 0 0;
+}
+#wordcount {width:80px;height:30px;font-size:1rem;margin:5px;}
