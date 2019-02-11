@@ -1,5 +1,5 @@
 # Lorem Generator
-> A small program to generate nonsense greeking to use in your layouts.
+> A useful little program to generate nonsense greeking to use in your layouts.
 
 ## Documentation
 
