@@ -80,3 +80,5 @@ h1 {margin:0 0 10px 0;padding:0;color:var(--accentcolor2);}
   padding:1px 6px 0 0;
 }
 #wordcount {width:80px;height:30px;font-size:1rem;margin:5px;}
+#hiddenblurb {opacity:0;}
+label {white-space:nowrap;}
