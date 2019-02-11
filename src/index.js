@@ -12,10 +12,10 @@
 	  renderNonsense(input.value);
 	}
 	function renderNonsense(num){
-		let blurb = LoremMaker.getLorem(num);
-	 	 output.innerHTML = blurb;
+		let loremObject = LoremMaker.getLorem(num);
+	 	 output.innerHTML = loremObject.blurb;
 	 	 if (Number(num) === 0){
-			 input.value = blurb.split(" ").length;
+			 input.value = loremObject.count;
 		 }
 	}
 	const LoremMaker = function(){
@@ -41,7 +41,7 @@
 				warr[i] = warr[i] + ".";
 			  }
 			}
-			return warr.join(" ");
+			return {"blurb":warr.join(" "),"count":count};
 		}
 		//random number utility function
 		function randRange(min, max) {
