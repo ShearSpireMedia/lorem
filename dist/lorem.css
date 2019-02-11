@@ -9,7 +9,7 @@ html {font-size:16px;}
   width:100%;
   margin:0 auto 10px auto;
   border:1px solid #FDD835;
-  border-radius:0px 0px 24px 24px;
+  border-radius:0 0 24px 24px;
   border-top:0 none;
 }
 .header, .footer {grid-column: 1 / -1;text-align:center;}
@@ -36,7 +36,6 @@ html {font-size:16px;}
 	.wrapper {grid-template-columns: 1fr;}
 }
 
-
 /*Just Cosmetics*/
 html {font-family:Arial,sans-serif;}
 body {background:#1E88E5;padding:0 0 10px 0;margin:0;}
@@ -62,7 +61,7 @@ body {background:#1E88E5;padding:0 0 10px 0;margin:0;}
 .header {border-bottom:2px solid #FDD835;margin-bottom:10px;padding:10px;}
 .content {padding:0 10px;max-width:96%;}
 h1 {margin:0 0 10px 0;padding:0;color:#1E88E5;}
-.footer {text-align:center;border-top:2px solid #FDD835;margin:10px 0 0 0;padding:10px 0 10px 0;color:#000;background:#FDD835;border:1px solid #FDD835;border-radius:0px 0px 24px 24px;}
+.footer {text-align:center;margin:10px 0 0 0;padding:10px 0 10px 0;color:#000;background:#FDD835;border:1px solid #FDD835;border-radius:0 0 24px 24px;}
 .header:first-line {font-size:2rem;color:#1E88E5;}
 #blurb:first-letter {
   color:#F44336;

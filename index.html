@@ -3,15 +3,16 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Lorem Generator</title>
-	<link rel="stylesheet" href="lorem.css">
-	<script src="lorem.js"></script>
+	<link rel="stylesheet" href="dist/lorem.css">
+	<!--<script src="src/index.js"></script>-->
+    <script src="dist/main.js"></script>
 </head>
 <body>
 <div class="wrapper">
   <header class="header">Lorem, Inc.<br>Nonsense Purveyors Since 1901</header>
   <nav id="navdiv" class="sidebar">
     <h1>Order Form</h1>
-    <p><label for="wordcount">How many words? </label><input id="wordcount" type="number" value="100"></p>
+    <p><label for="wordcount">How many words?<br>(0 = random)</label> <input id="wordcount" type="number" value="100"></p>
     <button id="makebtn" class="navbutton">Get Nonsense</button>
   </nav>
   <article class="content">
