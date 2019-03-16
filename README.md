@@ -1,5 +1,5 @@
 # Lorem Generator
-> A handy program to generate nonsense greeking and random Shakespeare Sonnets to use in your layouts.
+> A handy program to generate nonsense greeking or random Shakespeare Sonnets to use in your layouts.
 
 > See the program running on my <a href="https://makepages.com/lorem/" target="_blank" title="lorem generator">MakePages.com site</a>.
 
