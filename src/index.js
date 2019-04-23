@@ -2,19 +2,18 @@
 	let makebtn, copybtn, input, output, blurbcopy, sonnets, sonnetbtn, titlehead;
 	function init(){
 		titlehead = document.getElementById("titlehead");
-	  makebtn = document.getElementById("makebtn");
-	  copybtn = document.getElementById("copybtn");
-	  input = document.getElementById("wordcount");
-	  output = document.getElementById("blurb");
-	  blurbcopy = document.getElementById("blurbcopy");
-	  makebtn.addEventListener("click",showNonsense,false);
-	  copybtn.addEventListener("click",copyToClipboard,false);
-
+		makebtn = document.getElementById("makebtn");
+		copybtn = document.getElementById("copybtn");
+		input = document.getElementById("wordcount");
+		output = document.getElementById("blurb");
+		blurbcopy = document.getElementById("blurbcopy");
+		makebtn.addEventListener("click",showNonsense,false);
+		copybtn.addEventListener("click",copyToClipboard,false);
 		sonnetbtn = document.getElementById("sonnetbtn");
 		sonnetbtn.addEventListener("click",showSonnet,false);
-	  renderNonsense(input.value);
-	  document.removeEventListener("DOMContentLoaded", init);
-	}
+		renderNonsense(input.value);
+		document.removeEventListener("DOMContentLoaded", init);
+		}
 	function showNonsense(){
 		titlehead.innerHTML = "The Nonsense You Requested";
 	  renderNonsense(input.value);
@@ -84,7 +83,7 @@
 		for (let i=0;i<j.length;i++){
 			sonnets[i] = j[i].lines.slice();
 		}
-		sonnetbtn.style.display = "inline";
+		sonnetbtn.style.display = "inline-block";
 	}
 	function getSonnets(){
 		fetch('https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/sonnets.json').then(function(response) {

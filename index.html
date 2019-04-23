@@ -5,23 +5,28 @@
 	<title>Lorem Generator</title>
 	<link rel="stylesheet" href="css/lorem.css">
 	<script src="dist/main.js"></script>
-    <!--<script src="src/index.js"></script>-->
 </head>
 <body>
 <div class="wrapper">
-  <header class="header">Lorem, Inc.<br>Nonsense Purveyors Since 1901</header>
-  <nav id="navdiv" class="sidebar">
-    <h1>Order&nbsp;Form</h1>
-    <p><label for="wordcount">How many words?<br>(0 = random)</label> <input id="wordcount" type="number" value="100"></p>
-    <button id="makebtn" class="navbutton">Get Nonsense</button>
-      <button id="sonnetbtn" class="navbutton">Get A Sonnet</button>
-    <button id="copybtn" class="navbutton">Copy Text &#128203;</button>
-  </nav>
-  <article class="content">
-    <h1 id="titlehead">The Nonsense You Requested</h1>
-    <div id="blurb"></div>
-    <div id="hiddenblurb"><label for="blurbcopy"></label><textarea id="blurbcopy"></textarea></div>
-  </article>
+    <header class="header">Lorem, Inc.<br>Nonsense Purveyors Since 1901</header>
+    <nav class="navigation">
+        <h1>Order&nbsp;Form</h1>
+        <p>
+            <label for="wordcount">How many words?<br>(0 = random)</label>
+            <input id="wordcount" type="number" value="100">
+        </p>
+        <button id="makebtn" class="navigation__button">Get Nonsense</button>
+        <button id="sonnetbtn" class="navigation__button">Get A Sonnet</button>
+        <button id="copybtn" class="navigation__button">Copy Text &#128203;</button>
+    </nav>
+    <article class="content">
+        <h1 id="titlehead">The Nonsense You Requested</h1>
+        <div id="blurb" class="content__generated-text"><!--The generated text will appear here.--></div>
+        <div id="hiddenblurb">
+            <label for="blurbcopy">Text for copy/paste</label>
+            <textarea id="blurbcopy"><!--A copy of the generated text will appear here.--></textarea>
+        </div>
+    </article>
     <footer class="footer">Copyright &copy; <a href="https://shearspiremedia.com">ShearSpire Media</a></footer>
 </div>
 </body>
