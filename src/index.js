@@ -13,6 +13,9 @@
 		sonnetbtn.addEventListener("click",showSonnet,false);
 		renderNonsense(input.value);
 		document.removeEventListener("DOMContentLoaded", init);
+		document.getElementById("closealert").addEventListener("click",function(){
+			document.getElementById("copydialog").style.display = "none";
+		});
 		}
 	function showNonsense(){
 		titlehead.innerHTML = "The Nonsense You Requested";
@@ -29,8 +32,9 @@
     function copyToClipboard() {
         blurbcopy.select();
         document.execCommand("copy");
-        alert("Your text is in the clipboard. You may now paste it into your layout.");
+        document.getElementById("copydialog").style.display = "block";
     }
+
 	const LoremMaker = function(){
 		let words = ["a","ac","accumsan","aenean","aliquam","aliquet","amet","ante","arcu","at","auctor","augue","bibendum","commodo","condimentum","congue","consectetur","consequat","convallis","cras","curabitur","cursus","dapibus","diam","dictum","dignissim","dis","dolor","donec","dui","duis","efficitur","egestas","eget","eleifend","elementum","elit","enim","erat","eros","est","et","etiam","eu","euismod","ex","facilisi","facilisis","fames","faucibus","felis","fermentum","feugiat","finibus","fringilla","fusce","habitant","hendrerit","id","illegitimi","imperdiet","in","integer","ipsum","justo","lacinia","lacus","laoreet","lectus","leo","libero","ligula","lobortis","lorem","luctus","maecenas","magna","magnis","malesuada","mattis","mauris","maximus","mentus","metus","mi","molestie","mollis","montes","morbi","mus","nam","nascetur","natoque","nec","neque","netus","nibh","nisi","nisl","non","noncompis","nulla","nullam","nunc","odio","orci","ornare","parturient","pellentesque","penatibus","phasellus","placerat","porta","porttitor","posuere","pretium","proin","pulvinar","purus","quam","quis","quisque","rhoncus","ridiculus","risus","rutrum","sagittis","sapien","scelerisque","sed","semper","senectus","sit","sodales","sollicitudin","stupido","suscipit","suspendisse","tellus","tempus","tincidunt","tortor","tristique","turpis","ullamcorper","ultrices","ultricies","urna","ut","varius","vehicula","vel","velit","venenatis","vestibulum","vitae","vivamus","viverra","volutpat","vulputate"];
 		function getLorem(count = 0){
