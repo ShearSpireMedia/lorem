@@ -79,7 +79,7 @@
 		titlehead.innerHTML = "The Shakespeare Sonnet You Requested";
 		let num = randRange(0,sonnets.length-1);
 		output.innerHTML = sonnets[num].join("<br>") + "<br>(Sonnet #" + (num+1) + ")";
-        blurbcopy.value = sonnets[num].join("\n");
+        blurbcopy.value = sonnets[num].join("\n") + "\n(Sonnet #" + (num+1) + ")";
 	}
 	function setSonnets(j){
 		sonnets = [];
