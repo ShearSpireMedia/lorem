@@ -78,9 +78,8 @@
 	function showSonnet(){
 		titlehead.innerHTML = "The Shakespeare Sonnet You Requested";
 		let num = randRange(0,sonnets.length-1);
-		let sonnet = sonnets[num].join("<br>") + "<br>(Sonnet #" + (num+1) + ")";
-		output.innerHTML = sonnet;
-		blurbcopy.value = sonnet;
+		output.innerHTML = sonnets[num].join("<br>") + "<br>(Sonnet #" + (num+1) + ")";
+        blurbcopy.value = sonnets[num].join("\n");
 	}
 	function setSonnets(j){
 		sonnets = [];
