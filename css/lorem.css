@@ -64,6 +64,7 @@ button {-webkit-appearance:none;}
 }
 .content__generated-text {
     line-height:1.2;
+    font-family:Georgia,serif;
 }
 .content__generated-text::first-letter {
     color:var(--accentcolor3);

@@ -1,7 +1,7 @@
 import { LoremMaker } from './loremmaker.js';
 
 (function(){
-	let makebtn, copybtn, input, output, blurbcopy, sonnets, sonnetbtn, titlehead;
+	let makebtn, copybtn, input, output, blurbcopy, sonnets, sonnetbtn, titlehead, loremObject;
 	function init(){
 		titlehead = document.getElementById("titlehead");
 		makebtn = document.getElementById("makebtn");
@@ -9,28 +9,29 @@ import { LoremMaker } from './loremmaker.js';
 		input = document.getElementById("wordcount");
 		output = document.getElementById("blurb");
 		blurbcopy = document.getElementById("blurbcopy");
-		makebtn.addEventListener("click",showNonsense,false);
+		makebtn.addEventListener("click",showLoremText,false);
 		copybtn.addEventListener("click",copyToClipboard,false);
 		sonnetbtn = document.getElementById("sonnetbtn");
 		sonnetbtn.addEventListener("click",showSonnet,false);
-		renderNonsense(-1);
+		renderLoremText(-1);
 		document.removeEventListener("DOMContentLoaded", init);
 		document.getElementById("closealert").addEventListener("click",function(){
 			document.getElementById("copydialog").style.display = "none";
 		});
 		}
-	function showNonsense(){
-		titlehead.innerHTML = "The Nonsense You Requested";
-	  renderNonsense(input.value);
+	function showLoremText(){
+		titlehead.innerHTML = "The Text You Requested";
+	  	renderLoremText(input.value);
 	}
-	function renderNonsense(num){
-		let loremObject = LoremMaker.getLorem(num);
+	function renderLoremText(num){
+		loremObject = LoremMaker.getLorem(num);
 	 	 output.innerHTML = loremObject.blurb;
-	 	 if (Number(num) === 0){
-			 input.value = loremObject.count;
-		 }
+	 	 // if (Number(num) === 0){
+			//  input.value = loremObject.count;
+		 // }
         blurbcopy.value = loremObject.blurb.split("<br>").join("\n");
-		input.value = blurbcopy.value.split(" ").length;
+		//input.value = blurbcopy.value.split(" ").length;
+		input.value = loremObject.count;
 	}
     function copyToClipboard() {
         blurbcopy.select();
