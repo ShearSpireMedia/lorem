@@ -5,6 +5,6 @@
 
 ## Documentation
 
-- Type the number of words you need into the number input.
-- Click the 'Get Nonsense' button to generate the greeking text.
-- Each time you click the 'Get Nonsense' button a new random string will be generated.
+- Type the number of words you need into the number input. Type 0 for a random number of words. Type -1 if you wish to get the classic Lorem Ipsum text.
+- Click the 'Get Text' button to generate the greeking text.
+- Each time you click the 'Get Text' button a new random string will be generated.
