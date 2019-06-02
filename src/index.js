@@ -3,22 +3,23 @@ import { LoremMaker } from './loremmaker.js';
 (function(){
 	let makebtn, copybtn, input, output, blurbcopy, sonnets, sonnetbtn, titlehead, loremObject;
 	function init(){
-		titlehead = document.getElementById("titlehead");
-		makebtn = document.getElementById("makebtn");
-		copybtn = document.getElementById("copybtn");
-		input = document.getElementById("wordcount");
-		output = document.getElementById("blurb");
-		blurbcopy = document.getElementById("blurbcopy");
+		titlehead = gid("titlehead");
+		makebtn = gid("makebtn");
+		copybtn = gid("copybtn");
+		input = gid("wordcount");
+		output = gid("blurb");
+		blurbcopy = gid("blurbcopy");
 		makebtn.addEventListener("click",showLoremText,false);
 		copybtn.addEventListener("click",copyToClipboard,false);
-		sonnetbtn = document.getElementById("sonnetbtn");
+		sonnetbtn = gid("sonnetbtn");
 		sonnetbtn.addEventListener("click",showSonnet,false);
 		renderLoremText(-1);
 		document.removeEventListener("DOMContentLoaded", init);
-		document.getElementById("closealert").addEventListener("click",function(){
-			document.getElementById("copydialog").style.display = "none";
+		gid("closealert").addEventListener("click",function(){
+			gid("copydialog").style.display = "none";
 		});
-		}
+	}
+
 	function showLoremText(){
 		titlehead.innerHTML = "The Text You Requested";
 	  	renderLoremText(input.value);
@@ -35,7 +36,10 @@ import { LoremMaker } from './loremmaker.js';
         document.getElementById("copydialog").style.display = "block";
     }
 
-	//random number utility function
+	//utility functions
+	function gid(elid){
+		return document.getElementById(String(elid));
+	}
 	function randRange(min, max) {
 		return Math.floor(Math.random()*(max-min+1))+min;
 	}
