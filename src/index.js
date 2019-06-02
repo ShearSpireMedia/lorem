@@ -25,12 +25,8 @@ import { LoremMaker } from './loremmaker.js';
 	}
 	function renderLoremText(num){
 		loremObject = LoremMaker.getLorem(num);
-	 	 output.innerHTML = loremObject.blurb;
-	 	 // if (Number(num) === 0){
-			//  input.value = loremObject.count;
-		 // }
+		output.innerHTML = loremObject.blurb;
         blurbcopy.value = loremObject.blurb.split("<br>").join("\n");
-		//input.value = blurbcopy.value.split(" ").length;
 		input.value = loremObject.count;
 	}
     function copyToClipboard() {
