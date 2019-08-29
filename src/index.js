@@ -43,7 +43,7 @@ import { LoremMaker } from './loremmaker.js';
 	function gid(elid){
 		return document.getElementById(String(elid));
 	}
-	document.addEventListener('DOMContentLoaded', function (e) {
+	window.addEventListener('load', function (e) {
 		try {
 			init(e);
 			getSonnets();

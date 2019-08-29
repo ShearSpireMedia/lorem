@@ -209,6 +209,3 @@ const LoremMaker = (function (){
 })();
 // export feature declared earlier as default
 export {LoremMaker};
-
-
-
