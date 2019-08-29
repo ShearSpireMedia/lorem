@@ -37,11 +37,11 @@ import { LoremMaker } from './loremmaker.js';
     }
 
 	//utility functions
-	function gid(elid){
-		return document.getElementById(String(elid));
-	}
 	function randRange(min, max) {
 		return Math.floor(Math.random()*(max-min+1))+min;
+	}
+	function gid(elid){
+		return document.getElementById(String(elid));
 	}
 	document.addEventListener('DOMContentLoaded', function (e) {
 		try {
