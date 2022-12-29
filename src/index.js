@@ -16,8 +16,18 @@ import { LoremMaker } from './loremmaker.js';
 		renderLoremText(-1);
 		document.removeEventListener("DOMContentLoaded", init);
 		gid("closealert").addEventListener("click",function(){
-			gid("copydialog").style.display = "none";
+			closeDialog();
 		});
+		gid("closealert").addEventListener("keyup",function(e){
+			if (e.key === 'Escape') {
+				closeDialog();
+			}
+		});
+	}
+
+	function closeDialog() {
+		gid("copydialog").style.display = "none";
+		gid("copybtn").focus();
 	}
 
 	function showLoremText(){
@@ -33,7 +43,8 @@ import { LoremMaker } from './loremmaker.js';
     function copyToClipboard() {
         blurbcopy.select();
         document.execCommand("copy");
-        document.getElementById("copydialog").style.display = "block";
+        gid("copydialog").style.display = "block";
+		gid("closealert").focus();
     }
 
 	//utility functions
