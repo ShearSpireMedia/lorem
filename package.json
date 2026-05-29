@@ -23,7 +23,7 @@
   "homepage": "https://github.com/ShearSpireMedia/lorem#readme",
   "devDependencies": {
     "copy-webpack-plugin": "^14.0.0",
-    "cypress": "^14.5.3",
+    "cypress": "^15.16.0",
     "exports-loader": "^4.0.0",
     "imports-loader": "^4.0.1"
   }
