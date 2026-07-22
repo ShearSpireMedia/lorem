@@ -8,3 +8,8 @@
 - Type the number of words you need into the number input. Type 0 for a random number of words. Type -1 if you wish to get the classic Lorem Ipsum text.
 - Click the 'Get Text' button to generate the greeking text.
 - Each time you click the 'Get Text' button a new random string will be generated.
+
+## Notes
+- The Lorem generator is a very simple app so this repo uses no package.json or build tools.
+- If you have node installed, you can run a simple server from the terminal with the command "npx serve".
+- Vanilla JavaScript and native Web APIs can really simplify your life as a developer.
