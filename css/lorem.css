@@ -10,8 +10,7 @@
 }
 
 html {
-    font-size:16px;
-    font-family:Arial,sans-serif;
+   font-family:Arial,sans-serif;
 }
 body {
     background:var(--accentcolor2);
@@ -48,6 +47,7 @@ button {
     border-radius:0 0 1.5rem 1.5rem;
     border-top:0 none;
     background:var(--mainbgcolor);
+    font-size: 1.125rem;
 }
 .header, .footer {grid-column: 1 / -1;}
 
@@ -65,9 +65,10 @@ button {
 .content {
     padding:0 0.625rem;
     max-width:96%;
+    line-height: 1.5;
 }
 .content__generated-text {
-    line-height:1.2;
+    line-height:1.5;
     font-family:Georgia,serif;
 }
 .content__generated-text::first-letter {
@@ -128,6 +129,7 @@ button {
 
 .copyalert {
     font-size:1.8rem;
+    line-height: 1.5;
     text-align:center;
 }
 
@@ -162,7 +164,6 @@ button {
 
 /* STATE */
 @media screen and (min-width: 768px) {
-    html {font-size:18px;}
     .wrapper {grid-template-columns: 2fr 10fr;}
     .header {text-align:left;}
     .menu {

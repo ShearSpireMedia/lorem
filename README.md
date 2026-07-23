@@ -10,6 +10,7 @@
 - Each time you click the 'Get Text' button a new random string will be generated.
 
 ## Notes
-- The Lorem generator is a very simple app so this repo uses no package.json or build tools.
-- If you have node installed, you can run a simple server from the terminal with the command "npx serve".
+- The Lorem generator is a very simple app so this repo uses no build tools and a minimal package.json file.
+- To run the lorem generator in your browser, type 'npm start' or 'npx serve' into the terminal in your code editor.
+- Every effort has been made to make this little app WCAG 2.1 AA compliant.
 - Vanilla JavaScript and native Web APIs can really simplify your life as a developer.

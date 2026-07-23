@@ -1,0 +1,13 @@
+{
+  "name": "lorem",
+  "version": "1.1.0",
+  "description": "A handy program to generate nonsense greeking (actually phrases from Cicero) and random Shakespeare Sonnets to use in your layouts. A copy button is now included to put the text into the clipboard.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve"
+  },
+  "keywords": [],
+  "author": "Steven G. Estrella of ShearSpire Media",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/ShearSpireMedia/lorem#readme"
+}
